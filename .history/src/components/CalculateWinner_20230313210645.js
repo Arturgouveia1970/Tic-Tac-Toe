@@ -9,13 +9,10 @@ function CalculateWinner(squares) {
     [0, 4, 8],
     [2, 4, 6],
   ];
-  // eslint-disable-next-line
+  // eslint 
   for (let i = 0; i < lines.length; i++) {
-    // eslint-disable-next-line
     const [a, b, c] = lines[i];
-    // eslint-disable-next-line
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      // eslint-disable-next-line
       return squares[a];
     }
   }

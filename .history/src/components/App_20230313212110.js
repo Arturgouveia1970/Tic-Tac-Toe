@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-bind */
 import React, { useState } from 'react';
 import Board from './Board';
 
@@ -28,7 +27,7 @@ export default function Game() {
     return (
       // eslint-disable-next-line
       <li key={move}>
-        <button type="button" onClick={() => jumpTo(move)}>{description}</button>
+        <button type='button' onClick={() => jumpTo(move)}>{description}</button>
       </li>
     );
   });
@@ -37,6 +36,7 @@ export default function Game() {
     // eslint-disable-next-line
     <div className="game">
       <div className="game-board">
+        
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className="game-info">
