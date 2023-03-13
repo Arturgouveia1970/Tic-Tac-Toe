@@ -1,4 +1,4 @@
-/* eslint-disable jsx-no-bind */
+/* eslint-disable jxs
 import React, { useState } from 'react';
 import Board from './Board';
 
