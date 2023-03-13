@@ -33,8 +33,8 @@ export default function Game() {
   });
 
   return (
-    // eslint-disable-next-line
     <div className="game">
+      // eslint-disable-next-line
       <div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>

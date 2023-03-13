@@ -15,7 +15,6 @@ function CalculateWinner(squares) {
     const [a, b, c] = lines[i];
     // eslint-disable-next-line
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      // eslint-disable-next-line
       return squares[a];
     }
   }
