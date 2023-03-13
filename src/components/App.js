@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Board from './Board';
 
 export default function Game() {
@@ -11,7 +10,7 @@ export default function Game() {
   function handlePlay(nextSquares) {
     const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
     setHistory(nextHistory);
-    setCurrentMove(nextHistory.length - 1)
+    setCurrentMove(nextHistory.length - 1);
   }
 
   function jumpTo(nextMove) {
@@ -21,7 +20,7 @@ export default function Game() {
   const moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
-      description = 'Go to move #' + move;
+      description = `Go to move #${move}`;
     } else {
       description = 'Go to game start';
     }
