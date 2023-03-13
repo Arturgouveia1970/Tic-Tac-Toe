@@ -1,4 +1,4 @@
-/* eslint react/prop-types: 0 */
+/* eslint react
 import React from 'react';
 
 function Square({ value, onSquareClick }) {
